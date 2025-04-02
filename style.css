@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: noto sans;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+#nav1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: -1px;
+}
+
+.circle2{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+#nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#nav2 h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#nav2 h4 span{
+    color: rgb(133, 133, 133);
+    margin-left: 20px;
+}
+
+#nav2 h5{
+    display: none;
+}
+
+#second-nav{
+    height: 70px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    gap: 50px;
+}
+
+#second-nav h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#content{
+    height: calc(100% - 150px);
+    width: 100%;
+    /* background-color: blanchedalmond; */
+
+}
+
+#text-content{
+    height: 45%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+}
+
+#text-content::-webkit-scrollbar-thumb{
+    background-color: rgb(46, 46, 46);
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(255, 158, 12); */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.elem h1{
+    font-size: 8vw;
+    font-weight: 300;
+}
+
+#image-content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#image-content img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#image-content::-webkit-scrollbar{
+    display:none;
+}
+
+@media (max-width: 600px) {
+    #nav{
+        height: 70px;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    
+    #nav1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: -1px;
+    }
+    
+    .circle2{
+        height: 20px;
+        width: 20px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+    }
+    #nav2{
+        gap: 50px;
+    }
+    
+    #nav2 h4{
+        font-size: 16px;
+        font-weight: 500;
+        display: none;
+    }
+
+    #nav2 h5{
+        display: initial;
+        /* margin-right: 10px; */
+        align-items: center;
+    }
+
+    #nav2 i{
+        font-size: 20px;
+    }
+
+    #nav2 h4:nth-child(1){
+        display: initial;
+    }
+    
+    #nav2 h4 span{
+        color: rgb(133, 133, 133);
+        margin-left: 20px;
+    }
+    
+    #second-nav{
+        height: 60px;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    
+    #second-nav h3{
+        font-size: 2.6vw;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    
+    #content{
+        height: calc(100% - 130px);
+        width: 100%;    
+    }
+    
+    #text-content{
+        height: 30%;
+        width: 100%;
+        /* background-color: blueviolet; */
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    
+    #text-content::-webkit-scrollbar{
+        background-color: transparent;
+        height: 5px;
+    }
+    
+    #text-content::-webkit-scrollbar-thumb{
+        background-color: rgb(46, 46, 46);
+    }
+    
+    .elem{
+        flex-shrink: 0;
+        height: 100%;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-right: 50px;
+    }
+    
+    .elem h1{
+        font-size: 18vw;
+        font-weight: 300;
+        white-space: nowrap;
+    }
+    
+    #image-content{
+        display: flex;
+        height: 70%;
+        width: 100%;
+        overflow-x: auto;
+    }
+    
+    #image-content img{
+        flex-shrink: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #image-content img:nth-child(5){
+        object-position: left;
+    }
+    
+    #image-content::-webkit-scrollbar{
+        display:none;
+    }
+}
