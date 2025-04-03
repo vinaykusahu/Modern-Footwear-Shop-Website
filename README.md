@@ -14,3 +14,6 @@ This is a modern and minimalistic **footwear e-commerce website** that showcases
 🖥️ **Frontend:**  
 - HTML  
 - CSS (Flexbox & Grid for layout)
+
+## 🚀 Live Demo
+🔗 [View Footwear Shop Live](https://vinaykusahu.github.io/Modern-Footwear-Shop-Website/)
